@@ -1,4 +1,4 @@
-// Z algorithm, p. 9
+// Z algorithm, page 9
 
 var S = process.argv[2];
 
