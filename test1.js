@@ -1,9 +1,9 @@
-var Z = require('./Z');
+var Zalg = require('./Zalg');
 var fs = require('fs');
 var os = require('os');
 
 var zShowMatches = function(P, T) {
-    Z.findMatches(P, T, '\0', function(matches) {
+    Zalg.findMatches(P, T, '\0', function(matches) {
         console.log(matches);
     });
 };

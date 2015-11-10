@@ -1,5 +1,5 @@
-// Z algorithm, page 9
-var compute = function(S, callback) {
+// Z algorithm, page 9.
+var compute_Z = function(S, callback) {
     var Z = [ S.length ];
     var k, r = 0, l = 0;
     var m;                          // match length
@@ -28,8 +28,8 @@ var compute = function(S, callback) {
 };
 
 
-// Quadratic-time version
-var naiveCompute = function(S, callback) {
+// Quadratic-time version, for testing.
+var naive_Z = function(S, callback) {
     var Z = [ S.length ];
     var k;
     var m;                          // match length
@@ -44,7 +44,7 @@ var naiveCompute = function(S, callback) {
 };
 
 var findMatches = function(P, T, $, callback) {
-    compute(P+$+T, function(Z) {
+    compute_Z(P+$+T, function(Z) {
         var matches = [];
         var n = P.length, i;
 
@@ -55,6 +55,6 @@ var findMatches = function(P, T, $, callback) {
     });
 }
 
-exports.compute = compute;
-exports.naiveCompute = naiveCompute;
+exports.compute_Z = compute_Z;
+exports.naive_Z = naive_Z;
 exports.findMatches = findMatches;
