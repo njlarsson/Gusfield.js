@@ -25,3 +25,7 @@ var showZ = function(S) {
         }
     });
 };
+
+exports.showWithIxs = showWithIxs;
+exports.showZ = showZ;
+

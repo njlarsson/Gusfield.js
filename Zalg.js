@@ -1,6 +1,6 @@
 // Z algorithm, page 9.
 var compute_Z = function(S, callback) {
-    var Z = [ S.length ];
+    var Z = [];
     var k, r = 0, l = 0;
     var m;                          // match length
     var kʹ;
@@ -30,7 +30,7 @@ var compute_Z = function(S, callback) {
 
 // Quadratic-time version, for testing.
 var naive_Z = function(S, callback) {
-    var Z = [ S.length ];
+    var Z = [];
     var k;
     var m;                          // match length
 
